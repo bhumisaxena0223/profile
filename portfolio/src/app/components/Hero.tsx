@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Hero: React.FC = () => {
   return (
@@ -17,10 +18,16 @@ const Hero: React.FC = () => {
             years of user-focused development experience.
           </p>
           <div className="flex justify-center md:justify-start space-x-4">
-            <button className="px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700">
+            <button
+              className="px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700"
+              aria-label="Get in Touch"
+            >
               Get in Touch
             </button>
-            <button className="px-4 py-2 bg-gray-100 text-gray-700 rounded hover:bg-gray-200">
+            <button
+              className="px-4 py-2 bg-gray-100 text-gray-700 rounded hover:bg-gray-200"
+              aria-label="View Resume"
+            >
               Resume
             </button>
           </div>
@@ -29,10 +36,13 @@ const Hero: React.FC = () => {
         {/* Image Section */}
         <div className="flex-1 mt-10 md:mt-0">
           <div className="rounded-lg overflow-hidden border-4 border-purple-600">
-            <img
+            <Image
               src="/profile-picture.png"
               alt="Bhumi Saxena"
               className="w-full object-cover"
+              width={200}
+              height={200} // Added height for Image component
+              priority // Ensures the image is loaded quickly
             />
           </div>
         </div>
