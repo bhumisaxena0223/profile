@@ -39,9 +39,9 @@ const Hero: React.FC = () => {
             <Image
               src="/profile-picture.png"
               alt="Bhumi Saxena"
-              className="w-full object-cover"
-              width={200}
-              height={200} // Added height for Image component
+              className="w-full object-contain"
+              width={100}
+              height={100} // Added height for Image component
               priority // Ensures the image is loaded quickly
             />
           </div>
