@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@cloudflare/next-on-pages": "^1.13.7",
     "autoprefixer": "^10.4.20",
     "next": "15.0.3",
     "react": "19.0.0-rc-66855b96-20241106",
@@ -25,6 +26,6 @@
     "typescript": "^5"
   },
   "engines": {
-  "node": ">=18.17.1"
+    "node": ">=18.18.0"
   }
 }
