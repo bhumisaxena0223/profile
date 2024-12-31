@@ -16,6 +16,7 @@ const Hero: React.FC = () => {
           <p className="text-gray-600 mb-6">
             I build responsive web apps with Vue.js and React, backed by 5+
             years of user-focused development experience.
+            "I translate UI/UX designs into visually appealing, responsive websites, with a focus on collaboration, code optimization, and enhancing user engagement."
           </p>
           <div className="flex justify-center md:justify-start space-x-4">
             <button
@@ -40,8 +41,8 @@ const Hero: React.FC = () => {
               src="/profile-picture.png"
               alt="Bhumi Saxena"
               className="w-full object-contain"
-              width={100}
-              height={100} // Added height for Image component
+              width={75}
+              height={75} // Added height for Image component
               priority // Ensures the image is loaded quickly
             />
           </div>

@@ -3,8 +3,20 @@ import React from "react";
 const Projects: React.FC = () => {
   const projects = [
     {
-      title: "3D Solar System Planets",
-      description: "Explore the wonders of the solar system with a 3D simulation using Three.js.",
+      title: "Juno Finance",
+      description: "Built features for fiat and cryptocurrency transactions with dynamic animations using Vue.js and Nuxt.js.",
+    },
+    {
+      title: "Crunchy Link Dashboard",
+      description: "Created dashboards for SEO and digital marketing analytics, integrating drag-and-drop and multi-level authentication tools.",
+    },
+    {
+      title: "Humlife 360",
+      description: "Developed a smart diabetes management platform using Vue.js, Tailwind, and Figma.",
+    },
+    {
+      title: "Kovered (Healthcare App)",
+      description: "Designed and developed features like booking, sign-up, and data visualization using Vue.js and Angular.",
     },
   ];
 
