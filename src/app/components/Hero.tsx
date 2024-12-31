@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
               alt="Bhumi Saxena"
               className="w-full object-contain"
               width={75}
-              height={75} // Added height for Image component
+              height={50} // Added height for Image component
               priority // Ensures the image is loaded quickly
             />
           </div>
