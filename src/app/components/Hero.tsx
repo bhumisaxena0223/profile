@@ -41,7 +41,7 @@ const Hero: React.FC = () => {
             {/* Profile Image */}
             <div className="relative z-10">
               <Image
-                src="/profile-picture.png" // Replace with actual image path
+                src="/profile-picture1.png" // Replace with actual image path
                 alt="Bhumi Saxena"
                 className="rounded-lg"
                 width={288}

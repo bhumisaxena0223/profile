@@ -4,7 +4,7 @@ const Contact: React.FC = () => {
   return (
     <section className="py-16">
       <div className="container mx-auto px-6 text-center">
-        <h2 className="text-3xl font-bold mb-4">Let&apos;s Connect</h2>
+        <h2 className="text-3xl font-bold mb-4">Get In touch or Book Consultation</h2>
 
         <div className="md:flex justify-between  md:px-24">
           <div className="space-y-2 md:space-y-6">
