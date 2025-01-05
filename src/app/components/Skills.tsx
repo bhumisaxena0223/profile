@@ -11,10 +11,10 @@ const Skills: React.FC = () => {
   ];
 
   const tools = [
-    { name: "GIT", icon: "🌐" },
-    { name: "JIRA", icon: "🎨" },
-    { name: "Figma", icon: "💻" },
-    { name: "Zeplin", icon: "⚛️" },
+    { name: "GIT", icon: "🔧" },
+    { name: "JIRA", icon: "📋" },
+    { name: "Figma", icon: "🎨" },
+    { name: "Zeplin", icon: "🗂️" },
   ];
 
   return (
@@ -33,18 +33,20 @@ const Skills: React.FC = () => {
           ))}
         </div>
       </div>
-      <div className="container mx-auto px-4 mt-2">
-        <h2 className="text-2xl font-bold text-center mb-8">Tools & Frameworks</h2>
-        <div className="grid grid-cols-3 gap-4 md:grid-cols-6 text-center">
-          {tools.map((skill) => (
-            <div
-              key={skill.name}
-              className="p-4 bg-white shadow rounded hover:shadow-lg"
-            >
-              <span className="text-3xl">{skill.icon}</span>
-              <p className="text-lg mt-2">{skill.name}</p>
-            </div>
-          ))}
+      <div className="container mx-auto px-4 mt-8">
+        <div className="mx-auto px-4">
+          <h2 className="text-2xl font-bold mb-8">Tools & Frameworks</h2>
+          <div className="grid grid-cols-3 gap-4 md:grid-cols-6 text-center">
+            {tools.map((tool) => (
+              <div
+                key={tool.name}
+                className="p-4 bg-white shadow rounded hover:shadow-lg"
+              >
+                <span className="text-3xl">{tool.icon}</span>
+                <p className="text-lg mt-2">{tool.name}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
@@ -52,5 +54,3 @@ const Skills: React.FC = () => {
 };
 
 export default Skills;
-
-

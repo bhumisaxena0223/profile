@@ -3,30 +3,29 @@ import Image from "next/image";
 
 const Hero: React.FC = () => {
   return (
-    <section className="bg-gray-50 py-16">
-      <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center text-center md:text-left">
+    <section className="bg-black py-16">
+      <div className="container mx-auto  px-3 md:px-12 flex flex-col md:flex-row items-center text-center md:text-left">
         {/* Text Section */}
         <div className="flex-1">
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">
-            Hi, I’m <span className="text-purple-600">Bhumi Saxena.</span>
+          <h1 className="text-4xl font-bold text-white mb-4">
+            Hi, I’m <span className="text-purple-500">Bhumi Saxena.</span>
           </h1>
-          <h2 className="text-2xl text-purple-600 font-medium mb-6">
+          <h2 className="text-2xl text-purple-500 font-medium mb-6">
             Senior Front-end Developer
           </h2>
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-400 mb-6">
             I build responsive web apps with Vue.js and React, backed by 5+
             years of user-focused development experience.
-            "I translate UI/UX designs into visually appealing, responsive websites, with a focus on collaboration, code optimization, and enhancing user engagement."
           </p>
           <div className="flex justify-center md:justify-start space-x-4">
             <button
-              className="px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700"
+              className="px-6 py-3 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition"
               aria-label="Get in Touch"
             >
               Get in Touch
             </button>
             <button
-              className="px-4 py-2 bg-gray-100 text-gray-700 rounded hover:bg-gray-200"
+              className="px-6 py-3 bg-transparent border-2 border-gray-600 text-gray-400 rounded-lg hover:border-gray-400 hover:text-white transition"
               aria-label="View Resume"
             >
               Resume
@@ -35,16 +34,21 @@ const Hero: React.FC = () => {
         </div>
 
         {/* Image Section */}
-        <div className="flex-1 mt-10 md:mt-0">
-          <div className="rounded-lg overflow-hidden border-4 border-purple-600">
-            <Image
-              src="/profile-picture.png"
-              alt="Bhumi Saxena"
-              className="w-full object-contain"
-              width={75}
-              height={50} // Added height for Image component
-              priority // Ensures the image is loaded quickly
-            />
+        <div className="flex-1 mt-10 md:mt-0 relative">
+          <div className="relative w-72 h-70 mx-auto">
+            {/* Purple Background */}
+            <div className="absolute left-2 inset-0 bg-purple-500 rounded-lg -rotate-0 transform origin-center"></div>
+            {/* Profile Image */}
+            <div className="relative z-10">
+              <Image
+                src="/profile-picture.png" // Replace with actual image path
+                alt="Bhumi Saxena"
+                className="rounded-lg"
+                width={288}
+                height={258}
+                priority
+              />
+            </div>
           </div>
         </div>
       </div>
