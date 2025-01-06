@@ -1,7 +1,31 @@
-import React from "react";
+"use client";
+import React, { useEffect} from "react";
 import Image from "next/image";
 
 const Hero: React.FC = () => {
+  useEffect(() => {
+    // Dynamically load the Calendly widget script
+    const script = document.createElement('script');
+    script.src = "https://assets.calendly.com/assets/external/widget.js";
+    script.async = true;
+    document.body.appendChild(script);
+    
+    // Clean up the script when the component unmounts
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
+  const handleClick = (event: React.MouseEvent) => {
+    event.preventDefault(); // Prevent default link behavior
+    if (window.Calendly) {
+      window.Calendly.initPopupWidget({
+        url: 'https://calendly.com/bhumisaxena0223/30min',
+      });
+    } else {
+      console.error('Calendly script not loaded!');
+    }
+  };
   return (
     <section className="bg-black py-16">
       <div className="container mx-auto  px-3 md:px-12 flex flex-col md:flex-row items-center text-center md:text-left">
@@ -21,15 +45,16 @@ const Hero: React.FC = () => {
             <button
               className="px-6 py-3 bg-purple-500 text-white rounded-lg hover:bg-purple-600 transition"
               aria-label="Get in Touch"
+              onClick={handleClick}
             >
               Get in Touch
             </button>
-            <button
+            {/* <button
               className="px-6 py-3 bg-transparent border-2 border-gray-600 text-gray-400 rounded-lg hover:border-gray-400 hover:text-white transition"
               aria-label="View Resume"
             >
               Resume
-            </button>
+            </button> */}
           </div>
         </div>
 

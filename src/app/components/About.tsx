@@ -20,9 +20,9 @@ const About = () => {
           integrating third-party services like Stripe and SendGrid for
           full-featured, scalable solutions.
         </p>
-        <button className="px-6 py-3 bg-purple-500 hover:bg-purple-600 rounded-md font-medium">
+        {/* <button className="px-6 py-3 bg-purple-500 hover:bg-purple-600 rounded-md font-medium text-white">
           READ MORE
-        </button>
+        </button> */}
       </div>
 
       {/* Image Section */}
