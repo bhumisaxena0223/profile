@@ -1,3 +1,5 @@
 node_modules
 .open-next
 .next
+.wrangler
+.open-next

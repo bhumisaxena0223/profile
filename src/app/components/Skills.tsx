@@ -1,22 +1,44 @@
 import React from "react";
 
 const Skills: React.FC = () => {
-  const skills = [
-    { name: "HTML5", icon: "🌐" },
-    { name: "CSS3", icon: "🎨" },
-    { name: "JavaScript", icon: "💻" },
-    { name: "React", icon: "⚛️" },
-    { name: "Vue.js", icon: "🖥️" },
-    { name: "Tailwind CSS", icon: "🎋" },
-  ];
+const skills = [
+  { name: "HTML5", icon: "🌐" },
+  { name: "CSS3", icon: "🎨" },
+  { name: "JavaScript", icon: "💻" },
+  { name: "TypeScript", icon: "🔷" },
+  { name: "React", icon: "⚛️" },
+  { name: "Redux", icon: "🔁" },
+  { name: "Vue.js", icon: "🖥️" },
+  { name: "Vuex", icon: "📦" },
+  { name: "Angular 12", icon: "📐" },
+  { name: "Next.js", icon: "➡️" },
+  { name: "Nuxt.js", icon: "🚀" },
+  { name: "Tailwind CSS", icon: "🎋" },
+  { name: "Vuetify", icon: "🧩" },
+  { name: "MVVC", icon: "🏛️" },
+  { name: "MVC", icon: "🧱" },
+  { name: "REST APIs", icon: "🔗" },
+];
 
-  const tools = [
-    { name: "GIT", icon: "🔧" },
-    { name: "JIRA", icon: "📋" },
-    { name: "Figma", icon: "🎨" },
-    { name: "Zeplin", icon: "🗂️" },
-  ];
-
+const tools = [
+  { name: "Git", icon: "🔧" },
+  { name: "JIRA", icon: "📋" },
+  { name: "Figma", icon: "🎨" },
+  { name: "Zeplin", icon: "🗂️" },
+  { name: "Postman", icon: "📮" },
+  { name: "Strapi", icon: "📦" },
+  { name: "Chrome DevTools", icon: "🔍" },
+  { name: "Webpack", icon: "📦" },
+  { name: "Babel", icon: "🔤" },
+  { name: "ESLint", icon: "🧹" },
+  { name: "Prettier", icon: "🎯" },
+  { name: "NPM", icon: "📦" },
+  { name: "Yarn", icon: "🧶" },
+  { name: "Vercel", icon: "⚙️" },
+  { name: "Netlify", icon: "🌐" },
+  { name: "AWS", icon: "☁️" },
+  { name: "Firebase", icon: "🔥" },
+];
   return (
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
